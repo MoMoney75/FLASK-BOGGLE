@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(241 243 244);
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Audiowide", sans-serif;
+}
+
+section, #timer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    font-family: "Audiowide", sans-serif;
+}
+
+table,tbody,td, tr{
+    border-width: 1px;
+    border-style: solid;
+    font-family: "Audiowide", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+table{
+    background-color: white;
+    width: 20rem;
+    height: 20rem;
+}
+
+td{
+    text-align: center;
+}
+
+form{
+    font-family: "Audiowide", sans-serif;
+    text-align: center;
+    margin-top: 0.3rem;
+
+}
+
+button{
+    color: blue;
+}
+
+#endGameMessage{
+    font-size: 30px;
+    text-align: center;
+    font-family: "Audiowide", sans-serif;
+}

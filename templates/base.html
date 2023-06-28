@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/app.css">
+    <title>Boggle</title>
+  </head>
+  <body>
+    <h1>HELLO, TIME FOR A GAME OF BOGGLE!</h1>
+    <p id="timer">you have 60 seconds</p>
+    <section>
+      <div id="score"></div>
+      <div id="timer"></div>
+      <div id="highScore">your high score is: {{ highScore }}</div>
+      <div id="numplays">numbers of times played: {{numplays}}</div>
+    </section>
+
+    <table id="game_board">
+      <tbody>
+        {% for row in board %}
+        <tr>
+          {% for cell in row %}
+          <td>{{cell}}</td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <form id="form">
+      
+      <input type="text" name="word" id="word" placeholder="enter a word" />
+      <button id="submit">submit</button>
+    </form>
+
+    <script src="https://unpkg.com/axios@0.19.0/dist/axios.js"></script>
+    <script src="http://unpkg.com/jquery"></script>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
